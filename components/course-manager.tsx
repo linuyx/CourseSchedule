@@ -418,7 +418,7 @@ function CourseEditorSheet({
                 id="course-name"
                 value={values.name}
                 onChange={(event) => updateValue('name', event.target.value)}
-                placeholder="例如：高等数学"
+                placeholder="例如：社会工作理论"
                 aria-invalid={Boolean(errors.name)}
               />
               <FieldError>{errors.name}</FieldError>

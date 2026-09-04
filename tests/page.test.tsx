@@ -100,7 +100,7 @@ describe('course schedule page', () => {
     ).toBeTruthy();
 
     fireEvent.click(screen.getByRole('button', { name: '维护' }));
-    expect(await screen.findByText('高等数学')).toBeTruthy();
+    expect(await screen.findByText('高级社会工作实务')).toBeTruthy();
   });
 
   it('按所选周过滤课程并展示空周状态', async () => {
@@ -485,7 +485,7 @@ describe('course schedule page', () => {
     render(<Home />);
     fireEvent.click(await screen.findByRole('button', { name: '维护' }));
     expect(await screen.findByText('本机课程')).toBeTruthy();
-    expect(screen.queryByText('高等数学')).toBeNull();
+    expect(screen.queryByText('高级社会工作实务')).toBeNull();
     expect(screen.queryByRole('button', { name: '恢复' })).toBeNull();
     const stored = readStoredSchedule();
     expect(stored.ok).toBe(true);
