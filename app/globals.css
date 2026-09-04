@@ -1226,11 +1226,13 @@
 }
 
 .course-editor-fields [data-slot='input'],
+.course-editor-fields [data-slot='textarea'],
 .editor-select {
   min-height: 44px;
   border-radius: 12px;
   background: #faf9f5;
-  font-size: 14px;
+  /* iOS Safari and WeChat zoom focused form controls below 16px. */
+  font-size: 16px;
 }
 
 .editor-select {
